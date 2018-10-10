@@ -3,6 +3,7 @@ from torch.autograd import Variable
 
 import argparse
 import os
+import time
 
 from train import get_env
 from model import *
@@ -35,3 +36,4 @@ while not done:
     S_prime, R, done, _ = env.step(A)
     S = S_prime
     env.render()
+    time.sleep(0.02)
