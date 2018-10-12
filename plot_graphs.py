@@ -24,7 +24,7 @@ for f in file_paths:
 
 def plot_graph(y_vals, x_label, y_label, f_name):
     for i in range(len(y_vals)):
-        Y = y_vals[i][::5]
+        Y = y_vals[i][::10]
         X = list(range(len(Y)))
         plt.plot(X, Y, label=labels[i])
     plt.xlabel(x_label)
